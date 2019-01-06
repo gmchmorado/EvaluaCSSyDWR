@@ -47,8 +47,87 @@ nav a {
   text-decoration: none;
 }
 
-/*Para las otras paginas sería:
-.m2 {
-  text-decoration: none;
+.cont_img_prin {
+  background-color: #82c3a6;
+  padding: 5%;
+  text-align: center;
 }
-*/
+
+.cont_img_prin img {
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+}
+
+#division {
+  background-color: #d5c75f;
+  border: 1px solid black;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+div[class^="sec_"] {
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+}
+
+#division div a img {
+  width: 90%;
+  border: 2px solid black;
+  box-shadow: 2px 2px #02010a;
+}
+
+#efecto1 {
+  transition: box-shadow 2s;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+#efecto1:hover {
+  box-shadow: 2px 2px #82c3a6;
+  animation: giro 2s;
+}
+
+#efecto2 {
+  transition: box-shadow 2s;
+}
+
+@-webkit-keyframes desplaza {
+  from {
+    transform: translate(0,0);
+  }
+  to {
+    transform: translate(20px,-5px);
+  }
+}
+
+@keyframes desplaza {
+  from {
+    transform: translate(0,0);
+  }
+  to {
+    transform: translate(20px,-5px);
+  }
+}
+
+#efecto2:hover {
+  box-shadow: 2px 2px #82c3a6;
+  animation: desplaza 2s;
+}
