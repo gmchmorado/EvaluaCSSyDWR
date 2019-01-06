@@ -1,10 +1,10 @@
 /*font-family: 'Dancing Script', cursive;*/
 body {
   background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
 }
 
 header {
-  font-family: 'Dancing Script', cursive;
   color: white;
 }
 
@@ -130,4 +130,47 @@ div[class^="sec_"] {
 #efecto2:hover {
   box-shadow: 2px 2px #82c3a6;
   animation: desplaza 2s;
+}
+
+#pie {
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.contiene_pie {
+  width: 25%;
+  padding: 2%;
+}
+
+.contiene_pie h2 {
+  font-size: 2em;
+}
+
+.contiene_pie > p {
+  font-size: 1.5em;
+}
+
+.micorreo, .micorreo:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.micorreo:hover {
+  text-decoration: underline;
+}
+
+.miliga, .miliga:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.miliga:hover {
+  text-decoration: underline;
+}
+
+.contiene_pie p a img {
+  width: 10%;
 }
