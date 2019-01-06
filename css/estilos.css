@@ -1,4 +1,4 @@
-/*font-family: 'Dancing Script', cursive;*/
+/*Estilo general e index.html*/
 body {
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
@@ -14,8 +14,6 @@ header {
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  /*font-family: 'Dancing Script', cursive;
-  color: white;*/
 }
 
 .contiene_cabeza {
@@ -23,8 +21,6 @@ header {
 }
 
 #encabezado {
-  /*font-family: 'Dancing Script', cursive;
-  color: white;*/
   font-size: 2em;
   text-shadow: 2px 2px #02010a;
 }
@@ -173,4 +169,36 @@ div[class^="sec_"] {
 
 .contiene_pie p a img {
   width: 10%;
+}
+
+/*Secction galeria de paisajes.html y retratos.html*/
+.galeria {
+  background-color: #d5c75f;
+/*  width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.galeria > div[class^="img_galeria"] {
+  margin: 2% auto;
+  width: 29%;
+}
+
+.galeria div img {
+  width: 100%;
+  border: 2px solid black;
+  box-shadow: 2px 2px #02010a;
+}
+
+.img_galeria_1 img {
+  filter: blur(10px);
+}
+
+.img_galeria_2 img {
+  filter: grayscale(100%);
+}
+
+.img_galeria_3 img {
+  filter: sepia(90%);
 }
