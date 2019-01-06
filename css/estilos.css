@@ -1,0 +1,54 @@
+/*font-family: 'Dancing Script', cursive;*/
+body {
+  background-color: #02010a;
+}
+
+header {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+#cabecera {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  /*font-family: 'Dancing Script', cursive;
+  color: white;*/
+}
+
+.contiene_cabeza {
+  width: 80%;
+}
+
+#encabezado {
+  /*font-family: 'Dancing Script', cursive;
+  color: white;*/
+  font-size: 2em;
+  text-shadow: 2px 2px #02010a;
+}
+
+.contiene_menu {
+  width: 20%;
+}
+
+nav {
+  padding: 25px;
+  word-spacing: 15px;
+}
+
+nav a {
+  font-size: 1.5em;
+  color: white;
+}
+
+.m1 {
+  text-decoration: none;
+}
+
+/*Para las otras paginas sería:
+.m2 {
+  text-decoration: none;
+}
+*/
