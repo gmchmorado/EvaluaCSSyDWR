@@ -1,6 +1,6 @@
 /*Estilo general e index.html*/
 body {
-  background-color: white;
+  background-color: #02010a;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -16,8 +16,21 @@ body {
   }
 }
 
+@-webkit-keyframes entrada {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
 header {
   color: white;
+  text-align: center;
   animation: entrada 2s;
 }
 
@@ -26,11 +39,11 @@ header {
   border-radius: 10px 10px 0 0;
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .contiene_cabeza {
-  width: 80%;
+  width: 100%;
 }
 
 #encabezado {
@@ -39,7 +52,7 @@ header {
 }
 
 .contiene_menu {
-  width: 20%;
+  width: 100%;
 }
 
 nav {
@@ -63,7 +76,7 @@ nav a {
 }
 
 .cont_img_prin img {
-  width: 90%;
+  width: 80%;
   box-shadow: 2px 2px #02010a;
 }
 
@@ -72,17 +85,17 @@ nav a {
   border: 1px solid black;
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 div[class^="sec_"] {
-  width: 50%;
+  width: 90%;
   padding: 5%;
   text-align: center;
 }
 
 #division div a img {
-  width: 90%;
+  width: 80%;
   border: 2px solid black;
   box-shadow: 2px 2px #02010a;
 }
@@ -91,7 +104,7 @@ div[class^="sec_"] {
   transition: box-shadow 2s;
 }
 
-@-webkit-keyframes giro {
+@keyframes giro {
   from {
     transform: rotate(0deg);
   }
@@ -100,7 +113,7 @@ div[class^="sec_"] {
   }
 }
 
-@keyframes giro {
+@-webkit-keyframes giro {
   from {
     transform: rotate(0deg);
   }
@@ -118,7 +131,7 @@ div[class^="sec_"] {
   transition: box-shadow 2s;
 }
 
-@-webkit-keyframes desplaza {
+@keyframes desplaza {
   from {
     transform: translate(0,0);
   }
@@ -127,7 +140,7 @@ div[class^="sec_"] {
   }
 }
 
-@keyframes desplaza {
+@-webkit-keyframes desplaza {
   from {
     transform: translate(0,0);
   }
@@ -146,11 +159,11 @@ div[class^="sec_"] {
   border-radius: 0 0 10px 10px;
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .contiene_pie {
-  width: 25%;
+  width: 100%;
   padding: 2%;
 }
 
@@ -187,15 +200,15 @@ div[class^="sec_"] {
 /*Secction galeria de paisajes.html y retratos.html*/
 .galeria {
   background-color: #d5c75f;
-/*  width: 100%;*/
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   text-align: center;
 }
 
 .galeria > div[class^="img_galeria"] {
   margin: 2% auto;
-  width: 29%;
+  width: 80%;
 }
 
 .galeria div img {
@@ -206,12 +219,15 @@ div[class^="sec_"] {
 
 .img_galeria_1 img {
   filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .img_galeria_2 img {
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 .img_galeria_3 img {
   filter: sepia(90%);
+  -webkit-filter: sepia(90%);
 }

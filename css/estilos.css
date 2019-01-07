@@ -16,6 +16,18 @@ body {
   }
 }
 
+@-webkit-keyframes entrada {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
 header {
   color: white;
   animation: entrada 2s;
@@ -91,7 +103,7 @@ div[class^="sec_"] {
   transition: box-shadow 2s;
 }
 
-@-webkit-keyframes giro {
+@keyframes giro {
   from {
     transform: rotate(0deg);
   }
@@ -100,7 +112,7 @@ div[class^="sec_"] {
   }
 }
 
-@keyframes giro {
+@-webkit-keyframes giro {
   from {
     transform: rotate(0deg);
   }
@@ -118,7 +130,7 @@ div[class^="sec_"] {
   transition: box-shadow 2s;
 }
 
-@-webkit-keyframes desplaza {
+@keyframes desplaza {
   from {
     transform: translate(0,0);
   }
@@ -127,7 +139,7 @@ div[class^="sec_"] {
   }
 }
 
-@keyframes desplaza {
+@-webkit-keyframes desplaza {
   from {
     transform: translate(0,0);
   }
@@ -187,8 +199,8 @@ div[class^="sec_"] {
 /*Secction galeria de paisajes.html y retratos.html*/
 .galeria {
   background-color: #d5c75f;
-/*  width: 100%;*/
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -206,12 +218,15 @@ div[class^="sec_"] {
 
 .img_galeria_1 img {
   filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .img_galeria_2 img {
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 .img_galeria_3 img {
   filter: sepia(90%);
+  -webkit-filter: sepia(90%);
 }
